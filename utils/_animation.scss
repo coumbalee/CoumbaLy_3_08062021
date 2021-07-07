@@ -1,13 +1,44 @@
 @keyframes spin {
-    0% { transform: rotate(0deg);
-      visibility:visible;
-     }
-    100% { transform: rotate(360deg);
-    visibility:hidden; }
+  0% {
+    transform: rotate(0deg);
+    
   }
-  .process__card{
-    transform: scale(1);
-    & :hover{
-      transform :scale(1.5);
-    }
+  100% {
+    transform: rotate(360deg);
+  
   }
+}
+@keyframes hide{
+  to{
+    opacity:0;
+  }
+}
+
+.process__card {
+  transform: scale(1);
+  & :hover {
+    transform: scale(1.5);
+  }
+}
+
+
+ @-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
