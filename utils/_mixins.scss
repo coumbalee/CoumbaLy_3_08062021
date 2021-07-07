@@ -1,7 +1,8 @@
+/*header */
 @mixin header-logo{
     display:block;
     width: 170px;
-    height:40px;
+    height:30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -11,6 +12,7 @@
     height: 60px;
     width:100%;
 }
+/*div location*/
 @mixin location{
     display:flex;
     justify-content: center;
@@ -20,13 +22,26 @@
     height:50px;
     font-size: 18px;
 }
+/*margins*/
 @mixin margin{
     margin: 20px 20px;
 }
+
+@mixin section-margin{
+    margin: 30px 20px ;
+}
+/*grands titres*/
 @mixin big-titles{
     font-size: 25px;
     font-weight: bold;
 }
-@mixin section-margin{
-    margin: 30px 20px ;
+
+/*breakpoints*/
+@mixin responsive($breakpoint){
+ @if $breakpoint == tablet {
+    @media (min-width:600px){ @content};
+    }
+@if $breakpoint == tablet {
+    @media (min-width:900px){ @content};
+}
 }
