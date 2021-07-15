@@ -1,0 +1,232 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  background-color: $color-white;
+  animation: hide 1s ease 3s forwards;
+  z-index: 1;
+  &__container {
+    align-items: center;
+    border-top: 1rem solid $color-primary;
+    border-bottom: 1rem solid $color-secondary;
+    border-right: 1rem solid $color-tertiary;
+    border-left: 1rem solid transparent;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+  }
+}
+body {
+  font-family: "Roboto", sans sérif;
+  font-size: 18px;
+}
+a {
+  color: $color-black;
+  text-decoration: none;
+}
+header {
+  @include header-box;
+}
+.header__logo {
+  @include header-logo;
+}
+.location {
+  @include location;
+  &__text {
+    margin-left: 0.625rem;
+  }
+}
+.hero {
+  text-align: center;
+  background-color: rgba($color-grey, 0.1);
+  padding-bottom: $padding-section;
+  &__title {
+    @include big-titles;
+    padding: $padding-section $padding-section;
+  }
+  &__text {
+    color: rgba($color-black, 0.4);
+    padding-bottom: $padding-section + 0.625rem;
+  }
+  &__btn {
+    @include btn;
+  }
+}
+.process {
+  @include section-margin;
+  &__title {
+    @include big-titles;
+    padding: $padding-section;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+
+    @include responsive-desktop {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__card {
+    position: relative;
+    height: 50px;
+    background-color: rgba($color-grey, 0.2);
+    box-shadow: 8px 6px 6px rgb(219, 219, 219);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  &__number {
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 50%;
+    padding: 3px;
+    position: absolute;
+    left: -5px;
+    font-size: 15px;
+  }
+  &__text {
+    padding-right: 10px;
+  }
+  .process__icon {
+    padding: 0 20px;
+    font-size: 15px;
+    color: rgba($color-black, 0.5);
+  }
+}
+.restaurants {
+  background-color: rgba($color-grey, 0.1);
+  text-decoration: none;
+  @include responsive-tablet {
+    padding-bottom: 1, 25rem;
+  }
+
+  &__title {
+    @include big-titles;
+    padding: $padding-section;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1, 25rem;
+    @include responsive-tablet {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    } 
+   
+  }
+  .restaurant {
+    background-color: $color-white;
+    border-radius: 20px;
+    margin: 10px 20px;
+    position: relative;
+    box-shadow: 8px 6px 6px rgb(219, 219, 219);
+    /*@include responsive(tablet) {
+    width:40%;
+}*/
+    @include responsive-tablet {
+      width: 40%;
+    }
+
+    &__image {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+    }
+    &__badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      //couleur du text?//
+      background-color: $color-tertiary;
+      padding: 2px 4px;
+    }
+    &__content {
+      margin: 10px;
+    }
+    &__title {
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+
+    &__button {
+      position: absolute;
+      right: 0.625rem;
+      bottom: 0.625rem;
+      border: none;
+      background-color: transparent;
+      height: 45px;
+      font-size: 25px;
+      .heart__button {
+        position: relative;
+      }
+      .fas {
+        background: -webkit-linear-gradient(
+          0deg,
+          rgba(147, 86, 208, 1) 0%,
+          rgba(255, 121, 218, 1) 100%
+        );
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .heart__button--full {
+        //background-color: transparent;//
+        position: absolute;
+        left: 6px;
+        bottom: 12px;
+        visibility: hidden;
+      }
+      &:hover .heart__button {
+        visibility: hidden;
+      }
+      &:hover .heart__button--full {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba($color-black, 0.8);
+  justify-content: space-between;
+  padding: $padding-section;
+
+  &__title {
+    color: $color-white;
+    font-family: "Shrikhand", cursive;
+    padding-bottom: 2rem;
+    @include responsive-desktop {
+      margin: auto;
+    }
+  }
+  &__icon {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  &__text {
+    padding-bottom: 0.625rem;
+  }
+  & a {
+    color: $color-white;
+  }
+}
+.footer__text--container {
+  @include responsive-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
