@@ -1,0 +1,21 @@
+@mixin btn {
+  color: $color-white;
+  background: rgb(147, 86, 208);
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 208, 1) 0%,
+    rgba(255, 121, 218, 1) 100%
+  );
+  padding: $padding-section - 0.9375rem $padding-section;
+  border-radius: 200px;
+  box-shadow: 3px 5px 5px rgb(219, 219, 219);
+}
+@mixin btn-hover {
+  box-shadow: 6px 7px 7px rgb(219, 219, 219);
+  background: rgb(147, 86, 208);
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 208, 1) 0%,
+    rgba(255, 121, 218, 1) 70%
+  );
+}
