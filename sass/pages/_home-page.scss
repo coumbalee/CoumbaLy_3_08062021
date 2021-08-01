@@ -105,10 +105,8 @@ header {
     font-size: 15px;
     color: $color-black;
     opacity: 0.5;
-    @include responsive-desktop{
-    padding: 0 10px 0 40px;
-
-
+    @include responsive-desktop {
+      padding: 0 10px 0 40px;
     }
   }
 }
