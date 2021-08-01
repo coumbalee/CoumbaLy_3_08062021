@@ -3,10 +3,11 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 1;
   inset: 0;
   background-color: $color-white;
   animation: hide 1s ease 3s forwards;
-  z-index: 1;
+  pointer-events: none;
   &__container {
     align-items: center;
     border-top: 1rem solid $color-primary;
@@ -41,11 +42,11 @@ header {
 }
 .hero {
   text-align: center;
-  background-color: rgba($color-grey, 0.1);
-  padding-bottom: $padding-section;
+  background-color: $background-color-1;
+  padding-bottom: 3rem;
   &__title {
     @include big-titles;
-    padding: $padding-section $padding-section;
+    padding: $padding-section;
   }
   &__text {
     color: rgba($color-black, 0.4);
@@ -53,27 +54,33 @@ header {
   }
   &__btn {
     @include btn;
+    &:hover {
+      @include btn-hover;
+    }
   }
 }
 .process {
-  @include section-margin;
   &__title {
     @include big-titles;
     padding: $padding-section;
+    padding-bottom: 0;
   }
   &__cards {
     display: flex;
     flex-direction: column;
-
+    margin: $padding-section;
+    & :hover {
+      background-color: rgba($color-grey, 0.1);
+      box-shadow: 10px 8px 8px rgb(219, 219, 219);
+    }
     @include responsive-desktop {
       flex-direction: row;
       justify-content: space-evenly;
     }
   }
-
   &__card {
     position: relative;
-    height: 50px;
+    height: 40px;
     background-color: rgba($color-grey, 0.2);
     box-shadow: 8px 6px 6px rgb(219, 219, 219);
     border-radius: 15px;
@@ -81,48 +88,51 @@ header {
     align-items: center;
     padding-top: 25px;
   }
-
   &__number {
     background-color: $color-primary;
     color: $color-white;
     border-radius: 50%;
-    padding: 3px;
+    padding: 4px 6px;
     position: absolute;
-    left: -5px;
+    left: -8px;
     font-size: 15px;
   }
   &__text {
     padding-right: 10px;
   }
   .process__icon {
-    padding: 0 20px;
+    padding: 0 20px 0 40px;
     font-size: 15px;
-    color: rgba($color-black, 0.5);
+    color: $color-black;
+    opacity: 0.5;
+    @include responsive-desktop{
+    padding: 0 10px 0 40px;
+
+
+    }
   }
 }
+
 .restaurants {
-  background-color: rgba($color-grey, 0.1);
+  background-color: $background-color-1;
   text-decoration: none;
-  @include responsive-tablet {
-    padding-bottom: 1, 25rem;
-  }
 
   &__title {
     @include big-titles;
     padding: $padding-section;
+    padding-bottom: 0;
   }
   &__cards {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1, 25rem;
+    @include section-margin;
     @include responsive-tablet {
       display: flex;
       justify-content: space-evenly;
       flex-direction: row;
       flex-wrap: wrap;
       margin-bottom: 2rem;
-    } 
-   
+    }
   }
   .restaurant {
     background-color: $color-white;
@@ -130,9 +140,7 @@ header {
     margin: 10px 20px;
     position: relative;
     box-shadow: 8px 6px 6px rgb(219, 219, 219);
-    /*@include responsive(tablet) {
-    width:40%;
-}*/
+
     @include responsive-tablet {
       width: 40%;
     }
@@ -147,7 +155,6 @@ header {
       position: absolute;
       top: 20px;
       right: 20px;
-      //couleur du text?//
       background-color: $color-tertiary;
       padding: 2px 4px;
     }
@@ -158,7 +165,6 @@ header {
       font-weight: bold;
       padding-bottom: 5px;
     }
-
     &__button {
       position: absolute;
       right: 0.625rem;
@@ -169,6 +175,7 @@ header {
       font-size: 25px;
       .heart__button {
         position: relative;
+        transition: opacity 1s ease-in-out;
       }
       .fas {
         background: -webkit-linear-gradient(
@@ -185,13 +192,14 @@ header {
         position: absolute;
         left: 6px;
         bottom: 12px;
-        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
       }
       &:hover .heart__button {
-        visibility: hidden;
+        opacity: 0;
       }
       &:hover .heart__button--full {
-        visibility: visible;
+        opacity: 1;
       }
     }
   }
