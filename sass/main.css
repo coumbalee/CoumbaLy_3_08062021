@@ -1,21 +1,8 @@
 @charset "UTF-8";
-/*$breakpoints:(
-    "tablet":600px,
-    "desktop":900px
-);*/
 /*header */
 /*div location*/
 /*margins*/
 /*grands titres*/
-/*breakpoints
-@mixin responsive($breakpoint){
- @if $breakpoint == tablet {
-    @media (min-width:600px){ @content};
-    }
- @if $breakpoint == desktop {  
-    @media (min-width:980px){ @content};
-}
-}*/
 /*format tablette*/
 /*format desktop*/
 @-webkit-keyframes spin {
@@ -513,7 +500,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 1, 25rem;
+  padding-bottom: 20px;
   margin-left: 10px;
 }
 
@@ -530,8 +517,8 @@ header {
 }
 
 .header-arrow__icon {
-  margin-left: 1, 25rem;
-  font-size: 1.875rem;
+  margin-left: 20px;
+  font-size: 30px;
 }
 
 .hero__image {
@@ -636,7 +623,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*padding: 0.625rem;*/
 }
 
 .submenu .delay-1 {
@@ -723,7 +709,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 0.625rem;
-  padding: 0.625rem 1, 25rem;
+  padding: 10px 20px;
   border-radius: 15px;
   height: 60px;
   -webkit-box-shadow: 0px 4px 4px #dbdbdb;
@@ -807,9 +793,6 @@ header {
 .menu-item:hover .slide-left {
   width: 15%;
   opacity: 1;
-  /*@include responsive-desktop{
-      width: 20%;
-    }*/
 }
 
 .menu-item:hover .slide-left .check-icon {
