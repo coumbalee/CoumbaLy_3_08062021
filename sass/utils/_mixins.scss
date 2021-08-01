@@ -24,9 +24,8 @@
 }
 /*margins*/
 @mixin margin {
-  margin: 1,25rem 1,25rem;
+  margin: 1, 25rem 1, 25rem;
 }
-
 @mixin section-margin {
   margin: 1.875rem 0.625rem;
 }
@@ -35,17 +34,6 @@
   font-size: 25px;
   font-weight: bold;
 }
-
-/*breakpoints
-@mixin responsive($breakpoint){
- @if $breakpoint == tablet {
-    @media (min-width:600px){ @content};
-    }
- @if $breakpoint == desktop {  
-    @media (min-width:980px){ @content};
-}
-}*/
-
 /*format tablette*/
 @mixin responsive-tablet {
   @media screen and(min-width:600px) {
@@ -53,18 +41,17 @@
   }
 }
 /*format desktop*/
-@mixin responsive-desktop{
-  @media screen and (min-width:980px){
+@mixin responsive-desktop {
+  @media screen and (min-width: 980px) {
     @content;
   }
 }
-
-@mixin heart{
+@mixin heart {
   position: absolute;
-      right: 0.625rem;
-      bottom: 0.625rem;
-      border: none;
-      background-color: transparent;
-      height: 40px;
-      font-size: 1, 25rem;
+  right: 0.625rem;
+  bottom: 0.625rem;
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  font-size: 1, 25rem;
 }
