@@ -208,6 +208,7 @@ header {
   text-align: center;
   background-color: rgba(211, 211, 211, 0.1);
   padding-bottom: 3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero__title {
@@ -386,6 +387,7 @@ header {
   top: 20px;
   right: 20px;
   background-color: #99E2D0;
+  color: #1b6150;
   padding: 2px 4px;
 }
 
@@ -405,7 +407,7 @@ header {
   border: none;
   background-color: transparent;
   height: 45px;
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .restaurants .restaurant__button .heart__button {
@@ -423,11 +425,12 @@ header {
 
 .restaurants .restaurant__button .heart__button--full {
   position: absolute;
-  left: 6px;
+  left: 5px;
   bottom: 12px;
   opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+  font-size: 21px;
 }
 
 .restaurants .restaurant__button:hover .heart__button {
