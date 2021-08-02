@@ -256,9 +256,12 @@ header {
 }
 
 .process__cards :hover {
-  background-color: rgba(211, 211, 211, 0.1);
-  -webkit-box-shadow: 10px 8px 8px #dbdbdb;
-          box-shadow: 10px 8px 8px #dbdbdb;
+  background-color: #f4ebff;
+}
+
+.process__cards :hover .process__icon {
+  color: #9356DC;
+  opacity: 1;
 }
 
 @media screen and (min-width: 980px) {
@@ -299,6 +302,13 @@ header {
 
 .process__text {
   padding-right: 10px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 980px) {
+  .process__text {
+    padding-right: 20px;
+  }
 }
 
 .process .process__icon {
