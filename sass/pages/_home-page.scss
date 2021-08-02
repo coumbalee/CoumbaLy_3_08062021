@@ -44,6 +44,7 @@ header {
   text-align: center;
   background-color: $background-color-1;
   padding-bottom: 3rem;
+  font-family: 'Roboto', sans-serif;
   &__title {
     @include big-titles;
     padding: $padding-section;
@@ -154,6 +155,7 @@ header {
       top: 20px;
       right: 20px;
       background-color: $color-tertiary;
+      color: #1b6150;
       padding: 2px 4px;
     }
     &__content {
@@ -186,10 +188,9 @@ header {
         -webkit-text-fill-color: transparent;
       }
       .heart__button--full {
-        //background-color: transparent;//
         position: absolute;
         left: 6px;
-        bottom: 12px;
+        bottom: 11px;
         opacity: 0;
         transition: opacity 1s ease-in-out;
       }
