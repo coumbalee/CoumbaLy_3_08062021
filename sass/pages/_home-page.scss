@@ -71,8 +71,11 @@ header {
     flex-direction: column;
     margin: $padding-section;
     & :hover {
-      background-color: rgba($color-grey, 0.1);
-      box-shadow: 10px 8px 8px rgb(219, 219, 219);
+      background-color: #f4ebff;
+    }
+    & :hover .process__icon {
+      color: $color-primary;
+      opacity: 1;
     }
     @include responsive-desktop {
       flex-direction: row;
@@ -100,6 +103,10 @@ header {
   }
   &__text {
     padding-right: 10px;
+    font-weight: bold;
+    @include responsive-desktop {
+      padding-right: 20px;
+    }
   }
   .process__icon {
     padding: 0 20px 0 40px;
