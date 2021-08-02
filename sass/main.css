@@ -758,12 +758,12 @@ header {
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
+  padding-top: 18px;
 }
 
 @media screen and (min-width: 980px) {
   .menu-item__price {
     padding-right: 5px;
-    padding-top: 18px;
   }
 }
 
