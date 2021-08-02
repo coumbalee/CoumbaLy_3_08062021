@@ -24,6 +24,7 @@ body {
   font-family: "Roboto", sans sérif;
   font-size: 18px;
 }
+
 a {
   color: $color-black;
   text-decoration: none;
@@ -44,7 +45,7 @@ header {
   text-align: center;
   background-color: $background-color-1;
   padding-bottom: 3rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   &__title {
     @include big-titles;
     padding: $padding-section;
@@ -172,7 +173,8 @@ header {
       border: none;
       background-color: transparent;
       height: 45px;
-      font-size: 25px;
+      font-size: 21px;
+
       .heart__button {
         position: relative;
         transition: opacity 1s ease-in-out;
@@ -189,10 +191,11 @@ header {
       }
       .heart__button--full {
         position: absolute;
-        left: 6px;
-        bottom: 11px;
+        left: 5px;
+        bottom: 12px;
         opacity: 0;
         transition: opacity 1s ease-in-out;
+        font-size: 21px;
       }
       &:hover .heart__button {
         opacity: 0;
