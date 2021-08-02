@@ -181,6 +181,7 @@
   &__price {
     display: flex;
     font-weight: bold;
+    padding-top : 18px;
     @include responsive-desktop {
       padding-right: 5px;
     }
