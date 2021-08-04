@@ -33,6 +33,7 @@
 @mixin big-titles {
   font-size: 25px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 /*format tablette*/
 @mixin responsive-tablet {
