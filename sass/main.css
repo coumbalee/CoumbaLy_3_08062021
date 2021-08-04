@@ -198,6 +198,7 @@ header {
 
 .location__text {
   margin-left: 0.625rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero {
@@ -210,12 +211,14 @@ header {
 .hero__title {
   font-size: 25px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
   padding: 1.875rem;
 }
 
 .hero__text {
   color: rgba(0, 0, 0, 0.4);
   padding-bottom: 2.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero__btn {
@@ -227,6 +230,7 @@ header {
   border-radius: 200px;
   -webkit-box-shadow: 3px 5px 5px #dbdbdb;
           box-shadow: 3px 5px 5px #dbdbdb;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero__btn:hover {
@@ -238,8 +242,10 @@ header {
 }
 
 .process__title {
+  font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
   padding: 1.875rem;
   padding-bottom: 0;
 }
@@ -303,6 +309,7 @@ header {
 .process__text {
   padding-right: 10px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (min-width: 980px) {
@@ -330,8 +337,10 @@ header {
 }
 
 .restaurants__title {
+  font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
   padding: 1.875rem;
   padding-bottom: 0;
 }
@@ -395,15 +404,21 @@ header {
   background-color: #99E2D0;
   color: #1b6150;
   padding: 2px 4px;
+  font-family: "Roboto", sans-serif;
 }
 
 .restaurants .restaurant__content {
   margin: 10px;
 }
 
+.restaurants .restaurant__content span {
+  font-family: "Roboto", sans-serif;
+}
+
 .restaurants .restaurant__title {
   font-weight: bold;
   padding-bottom: 5px;
+  font-family: "Roboto", sans-serif;
 }
 
 .restaurants .restaurant__button {
@@ -414,6 +429,7 @@ header {
   background-color: transparent;
   height: 45px;
   font-size: 21px;
+  font-family: "Roboto", sans sérif;
 }
 
 .restaurants .restaurant__button .heart__button {
@@ -481,6 +497,7 @@ header {
 
 .footer__text {
   padding-bottom: 0.625rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer a {
@@ -685,6 +702,7 @@ header {
   padding-left: 1.25rem;
   margin-bottom: 5px;
   margin-top: 5px;
+  font-family: "Roboto", sans-serif;
 }
 
 .submenu__title:after {
@@ -744,6 +762,7 @@ header {
 .menu-item__text {
   padding-left: 0.625rem;
   overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (min-width: 980px) {
@@ -845,6 +864,7 @@ header {
   border-radius: 200px;
   -webkit-box-shadow: 3px 5px 5px #dbdbdb;
           box-shadow: 3px 5px 5px #dbdbdb;
+  font-family: "Roboto", sans-serif;
 }
 
 .order__link:hover {
