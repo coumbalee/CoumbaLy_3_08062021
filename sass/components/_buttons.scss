@@ -9,6 +9,7 @@
   padding: $padding-section - 0.9375rem $padding-section;
   border-radius: 200px;
   box-shadow: 3px 5px 5px rgb(219, 219, 219);
+  font-family: "Roboto", sans-serif;
 }
 @mixin btn-hover {
   box-shadow: 6px 7px 7px rgb(219, 219, 219);
