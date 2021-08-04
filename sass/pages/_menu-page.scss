@@ -117,6 +117,7 @@
     padding-left: 1.25rem;
     margin-bottom: 5px;
     margin-top: 5px;
+    font-family: "Roboto", sans-serif;
 
     &:after {
       content: " ";
@@ -163,6 +164,8 @@
   &__text {
     padding-left: 0.625rem;
     overflow: hidden;
+    font-family: "Roboto", sans-serif;
+
     @include responsive-desktop {
       padding-right: 10px;
     }
@@ -181,7 +184,7 @@
   &__price {
     display: flex;
     font-weight: bold;
-    padding-top : 18px;
+    padding-top: 18px;
     @include responsive-desktop {
       padding-right: 5px;
     }
